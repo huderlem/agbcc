@@ -1,5 +1,8 @@
 include $(DEVKITARM)/base_tools
 CC1 = ../old_agbcc
+CPP = $(PREFIX)cpp
+AS = $(PREFIX)as
+AR = $(PREFIX)ar
 
 libgcc.a: libgcc1.a libgcc2.a fp-bit.o dp-bit.o
 	$(AR) -x libgcc1.a
